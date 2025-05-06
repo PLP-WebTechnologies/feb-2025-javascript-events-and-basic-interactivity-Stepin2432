@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive Playground!</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Event Handling</h2>
+            <button id="clickButton">Click Me!</button>
+            <div id="hoverArea">Hover over me!</div>
+            <input type="text" id="keypressInput" placeholder="Type something...">
+        </section>
+
+        <section>
+            <h2>Interactive Elements</h2>
+            <button id="changeTextButton">Change My Text</button>
+            <div id="imageGallery">
+                <img src="image1.jpg" alt="Image 1" class="gallery-image">
+                <img src="image2.jpg" alt="Image 2" class="gallery-image" style="display:none;">
+                <button id="nextImage">Next Image</button>
+            </div>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'Tab1')">Tab 1</button>
+                <button class="tablink" onclick="openTab(event, 'Tab2')">Tab 2</button>
+                <div id="Tab1" class="tabcontent">
+                    <h3>Tab 1</h3>
+                    <p>Content for Tab 1.</p>
+                </div>
+                <div id="Tab2" class="tabcontent" style="display:none;">
+                    <h3>Tab 2</h3>
+                    <p>Content for Tab 2.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Form Validation</h2>
+            <form id="myForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required minlength="8">
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formFeedback"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Playground</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
